@@ -3,6 +3,23 @@
 // http://www.jittuu.com/2012/2/14/Testing-XPath-In-Chrome/
 
 
+// 0. XPath Examples.
+
+
+'//hr[@class="edge" and position()=1]'                // every first hr of 'edge' class
+'//table[count(tr)=1 and count(tr/td)=2]'             // all tables with 1 row and 2 cols
+'//div/form/parent::*'                                // all divs that have form
+'./div/b'                                             // a relative path
+'//table[parent::div[@class="pad"] and not(@id)]//a'  // any anchor in a table without id, contained in a div of "pad" class
+'/html/body/div/*[preceding-sibling::h4]'             // give me whatever after h4
+'//tr/td[font[@class="head" and text()="TRACK"]]'     // all td that has font of a "head" class and text "TRACK"
+'./table/tr[last()]'                                  // the last row of a table
+'//rdf:Seq/rdf:li/em:id'                              // using namespaces
+'//a/@href'                                           // hrefs of all anchors
+'//*[count(*)=3]'                                     // all nodes with 3 children
+'//var|//acronym'                                     // all vars and acronyms
+
+
 // 1. General.
 
 
