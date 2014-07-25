@@ -147,17 +147,17 @@
 
 
 boolean(expression)  // evaluates an expression and returns true or false.
-string([object])    // converts the given argument to a string.
-number([object])    // converts an object to a number and returns the number.
+string([object])     // converts the given argument to a string.
+number([object])     // converts an object to a number and returns the number.
 
 
 // 11.2. Math.
 
 
-ceiling(number)  // 
-floor(number)    // 
-round(decimal)   // 
-sum(node-set)    // 
+ceiling(number)  // evaluates a decimal number and returns the smallest integer greater than or equal to the decimal number.
+floor(number)    // evaluates a decimal number and returns the largest integer less than or equal to the decimal number.
+round(decimal)   // returns a number that is the nearest integer to the given number.
+sum(node-set)    // returns a number that is the sum of the numeric values of each node in a given node-set.
 
 
 // 11.3. Logic.
