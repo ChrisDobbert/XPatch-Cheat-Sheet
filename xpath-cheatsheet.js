@@ -39,8 +39,12 @@
 // 4. ID & Name.
 
 
-'//*[@id="I"]'    // element with id I (css: #I)
-'//E[@id="I"]'    // element <E> with id I (css: E#I)
-'//*[@name="N"]'  // element with name (css: [name=N])
-'//E[@name="N"]'  // element <E> with name (css: E[name=N])
+'//*[@id="I"]'                // element with id I (css: #I)
+'//E[@id="I"]'                // element <E> with id I (css: E#I)
+'//*[@name="N"]'              // element with name (css: [name='N'])
+'//E[@name="N"]'              // element <E> with name (css: E[name='N'])
+'//*[@id="X" or @name="X"]'   // element with id X or, failing that, a name X
+'//*[@name="N"][v+1]'         // element with name N & specified 0-based index ‘v’ (css: [name='N']:nth-child(v+1))
+'//*[@name="N"][@value="v"]'  // element with name N & specified value ‘v’ (css: *[name='N'][value='v’])
+
 
