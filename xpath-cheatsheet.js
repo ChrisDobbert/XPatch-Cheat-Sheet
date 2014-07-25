@@ -30,10 +30,10 @@
 // 3. Attribute.
 
 
-'//E/@A'                   // attribute A of element <E> (css: E@A)
-'//*/@A'                   // attribute A of any element (css: *@A)
-'//E[@A2="t"]/@A1'         // attribute A1 of element <E> where attribute A2 is 't' exactly (css: E[A2='t']@A1)
-'//E[contains(@A,"t")]/@A' // attribute A of element <E> where A contains 't' (css: E[A*='t']@A)
+'//E/@A'                    // attribute A of element <E> (css: E@A)
+'//*/@A'                    // attribute A of any element (css: *@A)
+'//E[@A2="t"]/@A1'          // attribute A1 of element <E> where attribute A2 is 't' exactly (css: E[A2='t']@A1)
+'//E[contains(@A,"t")]/@A'  // attribute A of element <E> where A contains 't' (css: E[A*='t']@A)
 
 
 // 4. ID & Name.
