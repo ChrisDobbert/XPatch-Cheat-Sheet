@@ -39,3 +39,8 @@
 // 4. ID & Name.
 
 
+'//*[@id="I"]'    // element with id I (css: #I)
+'//E[@id="I"]'    // element <E> with id I (css: E#I)
+'//*[@name="N"]'  // element with name (css: [name=N])
+'//E[@name="N"]'  // element <E> with name (css: E[name=N])
+
