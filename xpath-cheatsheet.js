@@ -71,7 +71,12 @@
 // 7. Parent & Child.
 
 
-'//E/*[1]'  // first child of element <E> (css: E > *:first-child)
-'//E[1]'    // first <E> child (css: E:first-of-type)
-''
+'//E/*[1]'            // first child of element <E> (css: E > *:first-child)
+'//E[1]'              // first <E> child (css: E:first-of-type)
+'//E/*[last()]'       // last child of element E (css: E *:last-child)
+'//E[last()]'         // last <E> child (css: E:last-of-type)
+'//E[2]'              // second <E> child (css: E:nth-of-type(2))
+'//*[2][name()="E"]'  // second child that is an <E> element (css: E:nth-child(2))
+'//E[last()-1]'       // second-to-last <E> child (css: E:nth-last-of-type(2))
+
 
