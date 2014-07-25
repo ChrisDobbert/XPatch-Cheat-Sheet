@@ -105,3 +105,9 @@
 
 // 9. Table Cell.
 
+
+'//*[@id="TestTable"]//tr[3]//td[2]'          // cell by row and column (e.g. 3rd row, 2nd column) (css: )
+'//td[preceding-sibling::td="t"]'             // cell immediately following cell containing 't' exactly
+'td[preceding-sibling::td[contains(.,"t")]]'  // cell immediately following cell containing 't'
+
+
