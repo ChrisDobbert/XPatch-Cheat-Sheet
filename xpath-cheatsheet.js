@@ -139,6 +139,63 @@
 '//*[@checked]'        // checkbox (or radio button) that is checked (css: *:checked)
 
 
+// 11. XPath Functions.
+// https://developer.mozilla.org/en-US/docs/Web/XPath/Functions
 
 
+// 11.1. Conversion.
+
+
+boolean(expression)  // evaluates an expression and returns true or false.
+string([object])    // 
+number([object])    // 
+
+
+// 11.2. Math.
+
+
+ceiling(number)  // 
+floor(number)    // 
+round(decimal)   // 
+sum(node-set)    // 
+
+
+// 11.3. Logic.
+
+
+true()     // 
+false()    // 
+not(expr)  // 
+
+
+// 11.4. Node.
+
+
+lang(string)                //
+name([node-set])            //
+namespace-uri([node-set])  //
+text()                      //
+
+
+// 11.5. Context.
+
+
+count(node-set)           // 
+function-available(name)  // 
+last()                    // 
+position()                // 
+
+
+// 11.6. String.
+
+
+contains(haystack-string, needle-string)  //
+concat(string1, string2 [stringn]*)       //
+normalize-space(string)                   //
+starts-with(haystack ,needle)            //
+string-length([string])                  //
+substring(string, start [length])        //
+substring-after(haystack, needle)        //
+substring-before(haystack, needle)       //
+translate( string, abc, XYZ)             //
 
