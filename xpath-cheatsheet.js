@@ -57,3 +57,12 @@
 
 
 // 6. Text & Link.
+
+
+'//*[.="t"]'                  // element containing text 't' exactly
+'//E[contains(text(), "t")]'  // element <E> containing text 't' (css: E:contains('t'))
+'//a'                         // link element (css: a)
+'//a[.="t"]'                  // element <a> containing text 't' exactly
+'//a[contains(text(), "t")]'  // element <a> containing text 't' (css: a:contains('t'))
+'//a[@href="url"]'            // <a> with target link 'url' (css: a[href='url'])
+'//a[.="t"]/@href'            // link URL labeled with text 't' exactly
