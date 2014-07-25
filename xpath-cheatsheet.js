@@ -198,3 +198,18 @@ substring-after(haystack, needle)         // returns a string that is the rest o
 substring-before(haystack, needle)        // returns a string that is the rest of a given string before a given substring.
 translate(string, abc, XYZ)               // evaluates a string and a set of characters to translate and returns the translated string.
 
+
+// 12. XPath Axes.
+
+ancestor            // indicates all the ancestors of the context node beginning with the parent node and traveling through to the root node.
+ancestor-or-self    // indicates the context node and all of its ancestors, including the root node.
+attribute (@)       // indicates the attributes of the context node. Only elements have attributes. This axis can be abbreviated with the at sign (@).
+child (/)           // indicates the children of the context node. If an XPath expression does not specify an axis, this is understood by default. Since only the root node or element nodes have children, any other use will select nothing.
+descendant (//)     // indicates all of the children of the context node, and all of their children, and so forth. Attribute and namespace nodes are not included - the parent of an attribute node is an element node, but attribute nodes are not the children of their parents.
+descendant-or-self  // indicates the context node and all of its descendants. Attribute and namespace nodes are not included - the parent of an attribute node is an element node, but attribute nodes are not the children of their parents.
+following           // indicates all the nodes that appear after the context node, except any descendant, attribute, and namespace nodes.
+following-sibling   // indicates all the nodes that have the same parent as the context node and appear after the context node in the source document.
+parent(..)          // indicates the single node that is the parent of the context node. It can be abbreviated as two periods (..).
+preceding           // indicates all the nodes that precede the context node in the document except any ancestor, attribute and namespace nodes.
+preceding-sibling   // indicates all the nodes that have the same parent as the context node and appear before the context node in the source document.
+self (.)            // indicates the context node itself. It can be abbreviated as a single period (.).
