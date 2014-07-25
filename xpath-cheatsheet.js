@@ -9,3 +9,7 @@
 '//text()'                  // all text nodes of web page
 '/html/body/.../.../.../E'  // element <E> by absolute reference (css: body > … > … > … > E)
 
+
+// 2. Tag.
+
+
