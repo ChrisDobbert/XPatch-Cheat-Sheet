@@ -147,8 +147,8 @@
 
 
 boolean(expression)  // evaluates an expression and returns true or false.
-string([object])    // 
-number([object])    // 
+string([object])    // converts the given argument to a string.
+number([object])    // converts an object to a number and returns the number.
 
 
 // 11.2. Math.
