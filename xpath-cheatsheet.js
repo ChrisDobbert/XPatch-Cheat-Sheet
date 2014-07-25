@@ -179,10 +179,10 @@ namespace-uri([node-set])  // returns a string representing the namespace URI of
 // 11.5. Context.
 
 
-count(node-set)           // 
-function-available(name)  // 
-last()                    // 
-position()                // 
+count(node-set)           // counts the number of nodes in a node-set and returns an integer.
+function-available(name)  // determines if a given function is available and returns boolean true or false.
+last()                    // returns a number equal to the context size from the expression evaluation context.
+position()                // returns a number equal to the context position from the expression evaluation context.
 
 
 // 11.6. String.
