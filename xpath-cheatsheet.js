@@ -66,3 +66,12 @@
 '//a[contains(text(), "t")]'  // element <a> containing text 't' (css: a:contains('t'))
 '//a[@href="url"]'            // <a> with target link 'url' (css: a[href='url'])
 '//a[.="t"]/@href'            // link URL labeled with text 't' exactly
+
+
+// 7. Parent & Child.
+
+
+'//E/*[1]'  // first child of element <E> (css: E > *:first-child)
+'//E[1]'    // first <E> child (css: E:first-of-type)
+''
+
