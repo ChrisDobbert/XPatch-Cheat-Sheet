@@ -89,3 +89,7 @@
 '//E[count(../E) = 1]'                                            // Element <E> with no <E> siblings (css: E:only-of-type)
 '//E[position() mod N = M + 1]'                                   // Every Nth element starting with the (M+1)th (css: E:nth-child(Nn+M))
 
+
+// 8. Sibling.
+
+
