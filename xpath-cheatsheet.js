@@ -172,7 +172,7 @@ not(expression)  // evaluates a boolean expression and returns the opposite valu
 
 
 lang(string)                // determines whether the context node matches the given language and returns boolean true or false.
-name([node-set])            // returns a string representing the QName of the first node in a given node-set.
+name([node-set])           // returns a string representing the QName of the first node in a given node-set.
 namespace-uri([node-set])  // returns a string representing the namespace URI of the first node in a given node-set.
 
 
