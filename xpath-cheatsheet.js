@@ -188,13 +188,13 @@ position()                // returns a number equal to the context position from
 // 11.6. String.
 
 
-contains(haystack-string, needle-string)  //
-concat(string1, string2 [stringn]*)       //
-normalize-space(string)                   //
-starts-with(haystack ,needle)            //
-string-length([string])                  //
-substring(string, start [length])        //
-substring-after(haystack, needle)        //
-substring-before(haystack, needle)       //
-translate( string, abc, XYZ)             //
+contains(haystack-string, needle-string)  // determines whether the first argument string contains the second argument string and returns boolean true or false.
+concat(string1, string2 [stringn]*)       // concatenates two or more strings and returns the resulting string.
+normalize-space(string)                   // strips leading and trailing white-space from a string, replaces sequences of whitespace characters by a single space, and returns the resulting string.
+starts-with(haystack, needle)             // checks whether the first string starts with the second string and returns true or false.
+string-length([string])                   // returns a number equal to the number of characters in a given string.
+substring(string, start [length])         // returns a part of a given string.
+substring-after(haystack, needle)         // returns a string that is the rest of a given string after a given substring.
+substring-before(haystack, needle)        // returns a string that is the rest of a given string before a given substring.
+translate(string, abc, XYZ)               // evaluates a string and a set of characters to translate and returns the translated string.
 
