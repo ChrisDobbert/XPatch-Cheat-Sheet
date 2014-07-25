@@ -71,12 +71,21 @@
 // 7. Parent & Child.
 
 
-'//E/*[1]'            // first child of element <E> (css: E > *:first-child)
-'//E[1]'              // first <E> child (css: E:first-of-type)
-'//E/*[last()]'       // last child of element E (css: E *:last-child)
-'//E[last()]'         // last <E> child (css: E:last-of-type)
-'//E[2]'              // second <E> child (css: E:nth-of-type(2))
-'//*[2][name()="E"]'  // second child that is an <E> element (css: E:nth-child(2))
-'//E[last()-1]'       // second-to-last <E> child (css: E:nth-last-of-type(2))
-
+'//E/*[1]'                                                        // first child of element <E> (css: E > *:first-child)
+'//E[1]'                                                          // first <E> child (css: E:first-of-type)
+'//E/*[last()]'                                                   // last child of element E (css: E *:last-child)
+'//E[last()]'                                                     // last <E> child (css: E:last-of-type)
+'//E[2]'                                                          // second <E> child (css: E:nth-of-type(2))
+'//*[2][name()="E"]'                                              // second child that is an <E> element (css: E:nth-child(2))
+'//E[last()-1]'                                                   // second-to-last <E> child (css: E:nth-last-of-type(2))
+'//*[last()-1][name()="E"]'                                       // second-to-last child that is an <E> element (css: E:nth-last-child(2))
+'//E1/[E2 and not( *[not(self::E2)])]'                            // element <E1> with only <E2> children
+'//E/..'                                                          // parent of element <E>
+'//*[@id="I"]/.../.../.../E'                                      // descendant <E> of element with id I using specific path (css: #I > … > … > … > E)
+'//*[@id="I"]//E'                                                 // descendant <E> of element with id I using unspecified path (css: #I E)
+'//E[count(*)=0]'                                                 // element <E> with no children (E:empty)
+'//E[count(*)=1]'                                                 // element <E> with an only child
+'//E[count(preceding-sibling::*)+count(following-sibling::*)=0]'  // Element <E> that is an only child (css: E:only-child)
+'//E[count(../E) = 1]'                                            // Element <E> with no <E> siblings (css: E:only-of-type)
+'//E[position() mod N = M + 1]'                                   // Every Nth element starting with the (M+1)th (css: E:nth-child(Nn+M))
 
