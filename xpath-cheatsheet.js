@@ -114,4 +114,11 @@
 // 10. Dynamic.
 
 
+'//E[@disabled]'       // user interface element <E> that is disabled (css: E:disabled)
+'//*[not(@disabled)]'  // user interface element that is enabled (css: E:enabled)
+'//*[@checked]'        // checkbox (or radio button) that is checked (css: *:checked)
+
+
+
+
 
