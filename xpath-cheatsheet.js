@@ -93,3 +93,7 @@
 // 8. Sibling.
 
 
+'//E2/following-sibling::E1'                 // Element <E1> following some sibling <E2> (css: E2 ~ E1)
+'//E2/following-sibling::*[1][name()="E1"]'  // Element <E1> immediately following sibling <E2> (css: E2 + E1)
+'//E2/following-sibling::*[2][name()="E1"]'  // Element <E1> following sibling <E2> with one intermediary (css: E2 + * + E1)
+'//E/following-sibling::*'                   // Sibling element immediately following <E> (css: E + *)
