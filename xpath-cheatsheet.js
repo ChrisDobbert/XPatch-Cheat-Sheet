@@ -55,3 +55,5 @@
 '//*[contains(concat(" ", @class, " "), " C ")]'          // element with a class C (css: .C)
 '//E[contains(concat(" ", @class, " "), " C ")]'          // element <E> with a class C (css: E.C)
 
+
+// 6. Text & Link.
