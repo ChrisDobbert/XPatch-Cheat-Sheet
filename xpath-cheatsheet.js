@@ -4,6 +4,7 @@
 
 
 // 0. XPath Examples.
+// More: http://xpath.alephzarro.com/content/cheatsheet.html
 
 
 '//hr[@class="edge" and position()=1]'                // every first hr of 'edge' class
