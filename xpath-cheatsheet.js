@@ -97,3 +97,11 @@
 '//E2/following-sibling::*[1][name()="E1"]'  // Element <E1> immediately following sibling <E2> (css: E2 + E1)
 '//E2/following-sibling::*[2][name()="E1"]'  // Element <E1> following sibling <E2> with one intermediary (css: E2 + * + E1)
 '//E/following-sibling::*'                   // Sibling element immediately following <E> (css: E + *)
+'//E2/preceding-sibling::E1'                 // Element <E1> preceding some sibling <E2>
+'//E2/preceding-sibling::*[1][name()="E1"]'  // Element <E1> immediately preceding sibling <E2>
+'//E2/preceding-sibling::*[2][name()="E1"]'  // Element <E1> preceding sibling <E2> with one intermediary
+'//E/preceding-sibling::*[1]'                // Sibling element immediately preceding <E>
+
+
+// 9. Table Cell.
+
