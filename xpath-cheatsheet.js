@@ -106,8 +106,12 @@
 // 9. Table Cell.
 
 
-'//*[@id="TestTable"]//tr[3]//td[2]'          // cell by row and column (e.g. 3rd row, 2nd column) (css: )
+'//*[@id="TestTable"]//tr[3]//td[2]'          // cell by row and column (e.g. 3rd row, 2nd column) (css: #TestTable tr:nth-child(3) td:nth-child(2))
 '//td[preceding-sibling::td="t"]'             // cell immediately following cell containing 't' exactly
-'td[preceding-sibling::td[contains(.,"t")]]'  // cell immediately following cell containing 't'
+'td[preceding-sibling::td[contains(.,"t")]]'  // cell immediately following cell containing 't' (css: td:contains('t') ~ td)
+
+
+// 10. Dynamic.
+
 
 
