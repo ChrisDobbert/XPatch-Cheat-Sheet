@@ -163,9 +163,9 @@ sum(node-set)    // returns a number that is the sum of the numeric values of ea
 // 11.3. Logic.
 
 
-true()     // 
-false()    // 
-not(expr)  // 
+true()           // returns a boolean value of true.
+false()          // returns boolean false.
+not(expression)  // evaluates a boolean expression and returns the opposite value.
 
 
 // 11.4. Node.
