@@ -1,5 +1,5 @@
 // XPath CheatSheet
-// To test XPath in Chrome Debugger: $x('/html/body')
+// To test XPath in your Chrome Debugger: $x('/html/body')
 // http://www.jittuu.com/2012/2/14/Testing-XPath-In-Chrome/
 
 
