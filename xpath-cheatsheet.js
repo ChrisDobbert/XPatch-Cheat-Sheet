@@ -85,22 +85,22 @@
 '//*[@id="I"]//E'                                                 // descendant <E> of element with id I using unspecified path (css: #I E)
 '//E[count(*)=0]'                                                 // element <E> with no children (E:empty)
 '//E[count(*)=1]'                                                 // element <E> with an only child
-'//E[count(preceding-sibling::*)+count(following-sibling::*)=0]'  // Element <E> that is an only child (css: E:only-child)
-'//E[count(../E) = 1]'                                            // Element <E> with no <E> siblings (css: E:only-of-type)
-'//E[position() mod N = M + 1]'                                   // Every Nth element starting with the (M+1)th (css: E:nth-child(Nn+M))
+'//E[count(preceding-sibling::*)+count(following-sibling::*)=0]'  // element <E> that is an only child (css: E:only-child)
+'//E[count(../E) = 1]'                                            // element <E> with no <E> siblings (css: E:only-of-type)
+'//E[position() mod N = M + 1]'                                   // every Nth element starting with the (M+1)th (css: E:nth-child(Nn+M))
 
 
 // 8. Sibling.
 
 
-'//E2/following-sibling::E1'                 // Element <E1> following some sibling <E2> (css: E2 ~ E1)
-'//E2/following-sibling::*[1][name()="E1"]'  // Element <E1> immediately following sibling <E2> (css: E2 + E1)
-'//E2/following-sibling::*[2][name()="E1"]'  // Element <E1> following sibling <E2> with one intermediary (css: E2 + * + E1)
-'//E/following-sibling::*'                   // Sibling element immediately following <E> (css: E + *)
-'//E2/preceding-sibling::E1'                 // Element <E1> preceding some sibling <E2>
-'//E2/preceding-sibling::*[1][name()="E1"]'  // Element <E1> immediately preceding sibling <E2>
-'//E2/preceding-sibling::*[2][name()="E1"]'  // Element <E1> preceding sibling <E2> with one intermediary
-'//E/preceding-sibling::*[1]'                // Sibling element immediately preceding <E>
+'//E2/following-sibling::E1'                 // element <E1> following some sibling <E2> (css: E2 ~ E1)
+'//E2/following-sibling::*[1][name()="E1"]'  // element <E1> immediately following sibling <E2> (css: E2 + E1)
+'//E2/following-sibling::*[2][name()="E1"]'  // element <E1> following sibling <E2> with one intermediary (css: E2 + * + E1)
+'//E/following-sibling::*'                   // sibling element immediately following <E> (css: E + *)
+'//E2/preceding-sibling::E1'                 // element <E1> preceding some sibling <E2>
+'//E2/preceding-sibling::*[1][name()="E1"]'  // element <E1> immediately preceding sibling <E2>
+'//E2/preceding-sibling::*[2][name()="E1"]'  // element <E1> preceding sibling <E2> with one intermediary
+'//E/preceding-sibling::*[1]'                // sibling element immediately preceding <E>
 
 
 // 9. Table Cell.
