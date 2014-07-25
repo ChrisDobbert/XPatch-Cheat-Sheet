@@ -48,3 +48,10 @@
 '//*[@name="N"][@value="v"]'  // element with name N & specified value ‘v’ (css: *[name='N'][value='v’])
 
 
+// 5. Lang & Class.
+
+
+'//E[@lang="L" or starts-with(@lang, concat("L", "-"))]'  // element <E> is explicitly in language L or subcode (css: E[lang|=L])
+'//*[contains(concat(" ", @class, " "), " C ")]'          // element with a class C (css: .C)
+'//E[contains(concat(" ", @class, " "), " C ")]'          // element <E> with a class C (css: E.C)
+
