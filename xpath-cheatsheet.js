@@ -24,7 +24,7 @@
 '//E[contains(concat(" ", @A, " "), " w ")'  // element <E> with attribute A containing word 'w' (css: E[A~='w'])
 '//E[matches(@A, "r")]'                      // element <E> with attribute A matching regex ‘r’
 '//E1[@id=I1] | //E2[@id=I2]'                // element <E1> with id I1 or element <E2> with id I2 (css: E1#I1, E2#I2)
-'//E1[@id=I1 or @id=I2]'                     // Element <E1> with id I1 or id I2 (css: E1#I1, E1#I2)
+'//E1[@id=I1 or @id=I2]'                     // element <E1> with id I1 or id I2 (css: E1#I1, E1#I2)
 
 
 // 3. Attribute.
